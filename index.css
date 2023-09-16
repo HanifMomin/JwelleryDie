@@ -1,0 +1,2579 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+#nav{
+    width: 100%;
+    height: 65px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position:fixed;
+}
+
+#nav-part1 h1{
+    margin-left: 3vw;
+    color: white;
+    font-size: 2.8vw;
+}
+#nav-part2 a{
+    text-decoration: none;
+    margin-right: 4vw;
+    font-size: 1.6vw;
+    color: black;
+    font-weight: 700;
+    border: 1px solid #000;
+    border-bottom-left-radius: 2.5vw;
+    border-top-right-radius: 2.5vw;
+    padding: 0.8vw 1vw;
+    background-color: rgb(175, 128, 10);
+    transition: 0.2s linear all;
+}
+#nav-part2 a:hover{
+    background-color: white;
+    color: black;
+}
+
+#nav-part3 a{
+    text-decoration: none;
+    margin-right: 1vw;
+    font-size: 1.6vw;
+    color: black;
+    font-weight: 700;
+    border: 1px solid #000;
+    border-bottom-left-radius: 2.5vw;
+    border-top-right-radius: 2.5vw;
+    padding: 0.8vw 1vw;
+    background-color: rgb(175, 128, 10);
+    transition: 0.2s linear all;
+}
+#nav-part3 a:hover{
+    background-color: white;
+    color: black;
+}
+#nav i{
+    font-size: 1.6vw;
+    color: white;
+    margin-right: 2vw;
+    font-weight: 500;
+    display: none;
+}
+#container{
+    width: 100%;
+    height: 20vw;
+    background-color: rgb(175, 128, 10);
+    padding-top: 12vw;
+    border-bottom: 0.3vw solid #000;
+}
+#container img{
+    border-top-left-radius: 6vw;
+    border-bottom-right-radius: 4vw;
+    border: 0.1vw solid #000;
+}
+#img img:nth-child(1){
+    margin-left: 9vw;
+}
+#img img:nth-child(2){
+    margin-left: 4vw;
+}
+#img img:nth-child(3){
+    margin-left: 4vw;
+}
+
+
+#container2{
+    width: 100%;
+    height: 25vw;
+    background-color: rgb(175, 128, 10);
+    display: flex;
+    padding-top: 1vw;
+}
+#left-part{
+    margin-left: 7vw;
+    margin-top: 2vw;
+}
+#left-part img{
+    border-top-left-radius: 6vw;
+    border-bottom-right-radius: 4vw;
+    border-bottom-left-radius: 1vw;
+    border-top-right-radius: 1vw;
+    border: 1px solid #000;
+}
+#right-part h1{
+    font-size: 2vw;
+    margin-left: 19vw;
+    padding-top: 2vw;
+}
+#right-part p{
+    font-size: 1.2vw;
+    margin-left: 19vw;
+    padding-top: 2vw;
+    line-height: 1.5vw;
+    letter-spacing: 0.1vw;
+}
+#footer{
+    width: 100%;
+    height: 15vw;
+    background-color: black;
+    color: white;
+    padding-top: 2vw;
+}
+#footer-left{
+    padding-left: 4vw;
+    line-height: 1vw;
+    color: rgba(26, 226, 76, 0.774);
+}
+#footer-left h1:nth-child(1){
+    font-size: 2vw;
+    padding-bottom: 2vw;
+    font-weight: 100;
+}
+#footer-left h1:nth-child(2){
+    font-size: 1.2vw;
+    margin-left: 7.5vw;
+    padding-bottom: 1.2vw;
+    font-weight: 100;
+}
+#footer-left h1:nth-child(3){
+    font-size: 1.2vw;
+    margin-left: 7.5vw;
+    padding-bottom: 1.2vw;
+    font-weight: 100;
+}
+#footer-left h1:nth-child(4){
+    font-size: 1.2vw;
+    margin-left: 7.5vw;
+    font-weight: 100;
+}
+#footer h4:nth-child(2){
+    font-size: 1vw;
+    margin-left: 43vw;
+    margin-top: 3.8vw;
+}
+#footer h4:nth-child(3){
+    font-size: 0.8vw;
+    margin-left: 44.4vw;
+}
+
+
+@media (max-width:500px) {
+    #nav{
+        background-color: black;
+        height:12vw;
+    }
+    #nav-part1 h1{
+        font-size: 5vw;
+    }
+    #nav-part2 a{
+        font-size: 2vw;
+        display: none;
+    }
+    #nav-part3 a{
+        font-size: 2vw;
+        display: none;
+    }
+    #nav i{
+        display: block;
+        font-size: 5.8vw;
+    }
+    #container{
+        flex-direction: column;
+        height: calc(100% - 65px);
+        padding-left: 6vw;
+        border-bottom: 0.6vw solid #000;
+    }
+    #container img{
+        width: 60%;
+        margin-top: 6vw;
+        margin-bottom: 2vw;
+        border-top-left-radius: 9vw;
+        border-bottom-right-radius: 9vw;
+    }
+    #img img:nth-child(1){
+        margin-left: 18vw;
+    }
+    #img img:nth-child(2){
+        margin-left: 18vw;
+    }
+    #img img:nth-child(3){
+        margin-left: 18vw;
+    }
+    #container2{
+        flex-direction: column;
+        height: calc(100% - 65px);
+        padding-left: 6vw;
+    }
+    #left-part img{
+        border-top-left-radius: 9vw;
+        border-bottom-right-radius: 9vw;
+        border-bottom-left-radius: 2vw;
+        border-top-right-radius: 2vw;
+        margin-left: 10vw;
+        width: 65%;
+    }
+    #right-part h1{
+        font-size: 4vw;
+        margin-top: 2vw;
+        margin-left: 17vw;
+    }
+    #right-part p{
+        font-size: 3vw;
+        line-height: 3.8vw;
+        letter-spacing: 0.2vw;
+        margin-left: 17vw;
+        margin-top: 2vw;
+        margin-bottom: 4vw;
+    }
+    #footer{
+        height: calc(100% - 65px);
+        padding-left: 6vw;
+        width: 164vw;
+        padding-bottom: 2vw;
+    }
+    #footer h4:nth-child(2){
+        font-size: 1vw;
+        margin-left: 75vw;
+        margin-top: 3.8vw;
+    }
+    #footer h4:nth-child(3){
+        font-size: 0.8vw;
+        margin-left: 76.3vw;
+    }
+}
+
+
+#categories{
+    width: 100%;
+    padding-top: 4.8vw;
+}
+#categories-container1{
+    width: 100%;
+    height: 22vw;
+    background-color: goldenrod;
+    padding: 2vw 0vw;
+    display: flex;
+    justify-content: space-around;
+}
+#categories-container1 #box1{
+    width: 14vw;
+    height: 14vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container1 #box2{
+    width: 14vw;
+    height: 14vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container1 #box3{
+    width: 14vw;
+    height: 14vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container1 #box4{
+    width: 14vw;
+    height: 14vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+
+#categories-container2{
+    width: 100%;
+    height: 26vw;
+    background-color: goldenrod;
+    padding: 2vw 0vw;
+    display: flex;
+    justify-content: space-around;
+}
+#categories-container2 #box1{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container2 #box2{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container2 #box3{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container2 #box1 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container2 #box2 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container2 #box3 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+
+#categories-container3{
+    width: 100%;
+    height: 26vw;
+    background-color: goldenrod;
+    padding: 2vw 0vw;
+    display: flex;
+    justify-content: space-around;
+}
+#categories-container3 #box1{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container3 #box2{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container3 #box3{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container3 #box1 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container3 #box2 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container3 #box3 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+
+#categories-container4{
+    width: 100%;
+    height: 26vw;
+    background-color: goldenrod;
+    padding: 2vw 0vw;
+    display: flex;
+    justify-content: space-around;
+}
+#categories-container4 #box1{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container4 #box2{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container4 #box3{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container4 #box1 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container4 #box2 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container4 #box3 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+
+#categories-container5{
+    width: 100%;
+    height: 26vw;
+    background-color: goldenrod;
+    padding: 2vw 0vw;
+    display: flex;
+    justify-content: space-around;
+}
+#categories-container5 #box1{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container5 #box2{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container5 #box3{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container5 #box1 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container5 #box2 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container5 #box3 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+
+
+#categories-container6{
+    width: 100%;
+    height: 26vw;
+    background-color: goldenrod;
+    padding: 2vw 0vw;
+    display: flex;
+    justify-content: space-around;
+}
+#categories-container6 #box1{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container6 #box2{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container6 #box3{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container6 #box1 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container6 #box2 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container6 #box3 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+
+#categories-container7{
+    width: 100%;
+    height: 26vw;
+    background-color: goldenrod;
+    padding: 2vw 0vw;
+    display: flex;
+    justify-content: space-around;
+}
+#categories-container7 #box1 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container7 #box2 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container7 #box3 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container7 #box1{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container7 #box2{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container7 #box3{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+
+#categories-container8{
+    width: 100%;
+    height: 26vw;
+    background-color: goldenrod;
+    padding: 2vw 0vw;
+    display: flex;
+    justify-content: space-around;
+}
+#categories-container8 #box1 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container8 #box2 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container8 #box3 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container8 #box1{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container8 #box2{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container8 #box3{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+
+#categories-container9{
+    width: 100%;
+    height: 26vw;
+    background-color: goldenrod;
+    padding: 2vw 0vw;
+    display: flex;
+    justify-content: space-around;
+}
+#categories-container9 #box1 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container9 #box2 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container9 #box3 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container9 #box1{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container9 #box2{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container9 #box3{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+
+#categories-container10{
+    width: 100%;
+    height: 26vw;
+    background-color: goldenrod;
+    padding: 2vw 0vw;
+    display: flex;
+    justify-content: space-around;
+}
+#categories-container10 #box1 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container10 #box2 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container10 #box3 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container10 #box1{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container10 #box2{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container10 #box3{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+
+#categories-container11{
+    width: 100%;
+    height: 26vw;
+    background-color: goldenrod;
+    padding: 2vw 0vw;
+    display: flex;
+    justify-content: space-around;
+}
+#categories-container11 #box1 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container11 #box2 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container11 #box3 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container11 #box1{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container11 #box2{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container11 #box3{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+
+#categories-container12{
+    width: 100%;
+    height: 26vw;
+    background-color: goldenrod;
+    padding: 2vw 0vw;
+    display: flex;
+    justify-content: space-around;
+}
+#categories-container12 #box1 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container12 #box2 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container12 #box3 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container12 #box1{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container12 #box2{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container12 #box3{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+
+#categories-container13{
+    width: 100%;
+    height: 26vw;
+    background-color: goldenrod;
+    padding: 2vw 0vw;
+    display: flex;
+    justify-content: space-around;
+}
+#categories-container13 #box1 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container13 #box2 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container13 #box3 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container13 #box1{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container13 #box2{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container13 #box3{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+
+#categories-container14{
+    width: 100%;
+    height: 26vw;
+    background-color: goldenrod;
+    padding: 2vw 0vw;
+    display: flex;
+    justify-content: space-around;
+}
+#categories-container14 #box1 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container14 #box2 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container14 #box3 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container14 #box1{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container14 #box2{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container14 #box3{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+
+#categories-container15{
+    width: 100%;
+    height: 26vw;
+    background-color: goldenrod;
+    padding: 2vw 0vw;
+    display: flex;
+    justify-content: space-around;
+}
+#categories-container15 #box1 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container15 #box2 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container15 #box3 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container15 #box1{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container15 #box2{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container15 #box3{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+
+#categories-container16{
+    width: 100%;
+    height: 26vw;
+    background-color: goldenrod;
+    padding: 2vw 0vw;
+    display: flex;
+    justify-content: space-around;
+}
+#categories-container16 #box1 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container16 #box2 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container16 #box3 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container16 #box1{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container16 #box2{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container16 #box3{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+
+#categories-container17{
+    width: 100%;
+    height: 26vw;
+    background-color: goldenrod;
+    padding: 2vw 0vw;
+    display: flex;
+    justify-content: space-around;
+}
+#categories-container17 #box1 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container17 #box2 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container17 #box3 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container17 #box1{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container17 #box2{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container17 #box3{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+
+#categories-container18{
+    width: 100%;
+    height: 26vw;
+    background-color: goldenrod;
+    padding: 2vw 0vw;
+    display: flex;
+    justify-content: space-around;
+}
+#categories-container18 #box1 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container18 #box2 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container18 #box3 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container18 #box1{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container18 #box2{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container18 #box3{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+
+#categories-container19{
+    width: 100%;
+    height: 26vw;
+    background-color: goldenrod;
+    padding: 2vw 0vw;
+    display: flex;
+    justify-content: space-around;
+}
+#categories-container19 #box1 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container19 #box2 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container19 #box3 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container19 #box1{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container19 #box2{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container19 #box3{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+
+#categories-container20{
+    width: 100%;
+    height: 26vw;
+    background-color: goldenrod;
+    padding: 2vw 0vw;
+    display: flex;
+    justify-content: space-around;
+}
+#categories-container20 #box1 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container20 #box2 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container20 #box3 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container20 #box1{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container20 #box2{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container20 #box3{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+
+#categories-container21{
+    width: 100%;
+    height: 26vw;
+    background-color: goldenrod;
+    padding: 2vw 0vw;
+    display: flex;
+    justify-content: space-around;
+}
+#categories-container21 #box1 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container21 #box2 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container21 #box3 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container21 #box1{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container21 #box2{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container21 #box3{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+
+#categories-container22{
+    width: 100%;
+    height: 26vw;
+    background-color: goldenrod;
+    padding: 2vw 0vw;
+    display: flex;
+    justify-content: space-around;
+}
+#categories-container22 #box1 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container22 #box2 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container22 #box3 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container22 #box1{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container22 #box2{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container22 #box3{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+
+
+
+#contactus-nav{
+    width: 100%;
+    height: 65px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#contactus-nav-part1 h1{
+    margin-left: 3vw;
+    color: white;
+    font-size: 2.8vw;
+}
+#contactus-nav-part2 a{
+    text-decoration: none;
+    margin-right: 4vw;
+    font-size: 1.6vw;
+    color: black;
+    font-weight: 700;
+    border: 1px solid #000;
+    border-bottom-left-radius: 2.5vw;
+    border-top-right-radius: 2.5vw;
+    padding: 0.8vw 1vw;
+    background-color: rgb(175, 128, 10);
+    transition: 0.2s linear all;
+}
+#contactus-nav-part2 a:hover{
+    background-color: white;
+    color: black;
+}
+
+#contactus-nav-part3 a{
+    text-decoration: none;
+    margin-right: 1vw;
+    font-size: 1.6vw;
+    color: black;
+    font-weight: 700;
+    border: 1px solid #000;
+    border-bottom-left-radius: 2.5vw;
+    border-top-right-radius: 2.5vw;
+    padding: 0.8vw 1vw;
+    background-color: rgb(175, 128, 10);
+    transition: 0.2s linear all;
+}
+#contactus-nav-part3 a:hover{
+    background-color: white;
+    color: black;
+}
+#contactus-nav i{
+    font-size: 1.6vw;
+    color: white;
+    margin-right: 2vw;
+    font-weight: 500;
+    display: none;
+}
+
+
+
+
+#contactus-container{
+    width: 90vw;
+    height: 28vw;
+    border: 0.2vw solid #000;
+    margin-left: 5vw;
+    margin-top: 6vw;
+    margin-bottom: 2vw;
+    border-top-left-radius: 6vw;
+    border-bottom-right-radius: 10vw;
+    display: flex;
+}
+#contactus-left-part label{
+    font-size: 2vw;
+    margin-left: 4vw;
+}
+#contactus-left-part input[type="text"]{
+    width: 45vw;
+    height: 3vw;
+    margin-left: 6vw;
+    margin-bottom: 40px;
+    margin-top: 4vw;
+}
+#contactus-left-part input[type="tel"]{
+    width: 45vw;
+    height: 3vw;
+    margin-left: 1.3vw;
+    margin-bottom: 4vw;
+}
+#contactus-left-part input[type="email"]{
+    width: 45vw;
+    height: 3vw;
+    margin-left: 6.2vw;
+}
+.submit{
+    width: 7vw;
+    height: 3vw;
+    margin-left: 16.6vw;
+    font-size: 1.4vw;
+    margin-top: 2vw;
+    border-radius: 0.5vw;
+    border: 0.2px solid #000;
+}
+.submit:hover{
+    background-color: black;
+    color: white;
+}
+.reset{
+    width: 7vw;
+    height: 3vw;
+    margin-left: 31vw;
+    font-size: 1.4vw;
+    border-radius: 0.5vw;
+    border: 0.2px solid #000;
+}
+.reset:hover{
+    background-color: black;
+    color: white;
+}
+#contactus-right-part{
+    padding-left: 6vw;
+    padding-top: 6vw;
+}
+
+#contactus-footer{
+    width: 100%;
+    height: 15vw;
+    background-color: black;
+    color: white;
+    padding-top: 2vw;
+}
+#contactus-footer-left{
+    padding-left: 4vw;
+    line-height: 1vw;
+    color: rgba(26, 226, 76, 0.774);
+}
+#contactus-footer-left h1:nth-child(1){
+    font-size: 2vw;
+    padding-bottom: 2vw;
+    font-weight: 100;
+}
+#contactus-footer-left h1:nth-child(2){
+    font-size: 1.2vw;
+    margin-left: 7.5vw;
+    padding-bottom: 1.2vw;
+    font-weight: 100;
+}
+#contactus-footer-left h1:nth-child(3){
+    font-size: 1.2vw;
+    margin-left: 7.5vw;
+    padding-bottom: 1.2vw;
+    font-weight: 100;
+}
+#contactus-footer-left h1:nth-child(4){
+    font-size: 1.2vw;
+    margin-left: 7.5vw;
+    font-weight: 100;
+}
+#contactus-footer h4:nth-child(2){
+    font-size: 1vw;
+    margin-left: 43vw;
+    margin-top: 3.8vw;
+}
+#contactus-footer h4:nth-child(3){
+    font-size: 0.8vw;
+    margin-left: 44.4vw;
+}
+
+
+
+@media (max-width:500px){
+    #nav{
+        background-color: black;
+        height:12vw;
+    }
+    #nav-part1 h1{
+        font-size: 5vw;
+    }
+    #nav-part2 a{
+        font-size: 2vw;
+        display: none;
+    }
+    #nav-part3 a{
+        font-size: 2vw;
+        display: none;
+    }
+    #nav i{
+        display: block;
+        font-size: 5.8vw;
+    }
+    #categories-container1{
+        height: calc(100%-65px);
+        flex-direction: column;
+        height: 120vw;
+        background-color: goldenrod;
+        padding: 110vw 40vw;
+        margin-left:-10vw;
+        border-bottom: 1px solid white;
+    }
+    #categories-container1 #box1{
+        width: 56vw;
+        height: 56vw;
+        border-radius: 4vw;
+        padding: 3vw 3.6vw;
+        margin-top: 10vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container1 #box2{
+        width: 56vw;
+        height: 56vw;
+        border-radius: 4vw;
+        padding: 3vw 3.6vw;
+        margin-top: 6vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container1 #box3{
+        width: 56vw;
+        height: 56vw;
+        border-radius: 4vw;
+        padding: 3vw 3.6vw;
+        margin-top: 6vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container1 #box4{
+        width: 56vw;
+        height: 56vw;
+        border-radius: 4vw;
+        padding: 3vw 3.6vw;
+        margin-top: 6vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+
+    #categories-container2{
+        height: calc(100%-65px);
+        flex-direction: column;
+        width: 100%;
+        height: 12vw;
+        padding: 150vw 40vw;
+        margin-left:-10vw;
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+    }
+    #categories-container2 #box1{
+        width: 80vw;
+        height: 90vw;
+        border-radius: 4vw;
+        padding: 3vw 3.6vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container2 #box2{
+        width: 80vw;
+        height: 90vw;
+        border-radius: 4vw;
+        padding: 3vw 3.6vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container2 #box3{
+        width: 80vw;
+        height: 90vw;
+        border-radius: 4vw;
+        padding: 3vw 3.6vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container2 #box1 img:hover{
+        width: 130vw;
+        height: 90vw;
+    }
+    #categories-container2 #box2 img:hover{
+        width: 130vw;
+        height: 90vw;
+    }
+    #categories-container2 #box3 img:hover{
+        width: 130vw;
+        height: 90vw;
+    }
+
+    #categories-container3{
+        height: calc(100%-65px);
+        flex-direction: column;
+        height: 12vw;
+        padding: 140vw 40vw;
+        margin-left:-10vw;
+        padding-left: 40vw;
+        border-bottom: 1px solid white;
+    }
+    #categories-container3 #box1{
+        width: 80vw;
+        height: 90vw;
+        border-radius: 4vw;
+        padding: 3vw 3.6vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container3 #box2{
+        width: 80vw;
+        height: 90vw;
+        border-radius: 4vw;
+        padding: 3vw 3.6vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container3 #box3{
+        width: 80vw;
+        height: 90vw;
+        border-radius: 4vw;
+        padding: 3vw 3.6vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container3 #box1 img:hover{
+        width: 130vw;
+        height: 90vw;
+    }
+    #categories-container3 #box2 img:hover{
+        width: 130vw;
+        height: 90vw;
+    }
+    #categories-container3 #box3 img:hover{
+        width: 130vw;
+        height: 90vw;
+    }
+
+    #categories-container4{
+        height: calc(100%-65px);
+        flex-direction: column;
+        height: 12vw;
+        padding: 140vw 40vw;
+        margin-left:-10vw;
+        padding-left: 40vw;
+        border-bottom: 1px solid white;
+    }
+    #categories-container4 #box1{
+        width: 80vw;
+        height: 90vw;
+        border-radius: 4vw;
+        padding: 3vw 3.6vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container4 #box2{
+        width: 80vw;
+        height: 90vw;
+        border-radius: 4vw;
+        padding: 3vw 3.6vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container4 #box3{
+        width: 80vw;
+        height: 90vw;
+        border-radius: 4vw;
+        padding: 3vw 3.6vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container4 #box1 img:hover{
+        width: 130vw;
+        height: 90vw;
+    }
+    #categories-container4 #box2 img:hover{
+        width: 130vw;
+        height: 90vw;
+    }
+    #categories-container4 #box3 img:hover{
+        width: 130vw;
+        height: 90vw;
+    }
+
+    #categories-container5{
+        height: calc(100%-65px);
+        flex-direction: column;
+        height: 12vw;
+        padding: 150vw 40vw;
+        margin-left:-10vw;
+        padding-left: 40vw;
+        border-bottom: 1px solid white;
+    }
+    #categories-container5 #box1{
+        width: 80vw;
+        height: 90vw;
+        border-radius: 4vw;
+        padding: 3vw 3.6vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container5 #box2{
+        width: 80vw;
+        height: 90vw;
+        border-radius: 4vw;
+        padding: 3vw 3.6vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container5 #box3{
+        width: 80vw;
+        height: 90vw;
+        border-radius: 4vw;
+        padding: 3vw 3.6vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container5 #box1 img:hover{
+        width: 130vw;
+        height: 90vw;
+    }
+    #categories-container5 #box2 img:hover{
+        width: 130vw;
+        height: 90vw;
+    }
+    #categories-container5 #box3 img:hover{
+        width: 130vw;
+        height: 90vw;
+    }
+
+     #categories-container6{
+        height: calc(100%-65px);
+        flex-direction: column;
+        height: 12vw;
+        padding: 150vw 40vw;
+        margin-left:-10vw;
+        border-bottom: 1px solid white;
+    }
+    #categories-container6 #box1{
+        width: 80vw;
+        height: 90vw;
+        border-radius: 4vw;
+        padding: 3vw 3.6vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container6 #box2{
+        width: 80vw;
+        height: 90vw;
+        border-radius: 4vw;
+        padding: 3vw 3.6vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container6 #box3{
+        width: 80vw;
+        height: 90vw;
+        border-radius: 4vw;
+        padding: 3vw 3.6vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container6 #box1 img:hover{
+        width: 130vw;
+        height: 90vw;
+    }
+    #categories-container6 #box2 img:hover{
+        width: 130vw;
+        height: 90vw;
+    }
+    #categories-container6 #box3 img:hover{
+        width: 130vw;
+        height: 90vw;
+    }
+
+    #categories-container7{
+        height: calc(100%-65px);
+        flex-direction: column;
+        height: 12vw;
+        padding: 150vw 40vw;
+        margin-left:-10vw;
+        border-bottom: 1px solid white;
+    }
+    #categories-container7 #box1{
+        width: 80vw;
+        height: 90vw;
+        border-radius: 4vw;
+        margin-left:-10vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container7 #box2{
+        width: 80vw;
+        height: 90vw;
+        border-radius: 4vw;
+        margin-left:-10vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container7 #box3{
+        width: 80vw;
+        height: 90vw;
+        border-radius: 4vw;
+        margin-left:-10vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container7 #box1 img:hover{
+        width: 130vw;
+        height: 90vw;
+    }
+    #categories-container7 #box2 img:hover{
+        width: 130vw;
+        height: 90vw;
+    }
+    #categories-container7 #box3 img:hover{
+        width: 130vw;
+        height: 90vw;
+    }
+
+    #categories-container8{
+        height: calc(100%-65px);
+        flex-direction: column;
+        height: 12vw;
+        padding: 150vw 40vw;
+        margin-left:-10vw;
+        border-bottom: 1px solid white;
+    }
+    #categories-container8 #box1{
+        width: 80vw;
+        height: 90vw;
+        border-radius: 4vw;
+        padding: 3vw 3.6vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container8 #box2{
+        width: 80vw;
+        height: 90vw;
+        border-radius: 4vw;
+        padding: 3vw 3.6vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container8 #box3{
+        width: 80vw;
+        height: 90vw;
+        border-radius: 4vw;
+        padding: 3vw 3.6vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container8 #box1 img:hover{
+        width: 130vw;
+        height: 90vw;
+    }
+    #categories-container8 #box2 img:hover{
+        width: 130vw;
+        height: 90vw;
+    }
+    #categories-container8 #box3 img:hover{
+        width: 130vw;
+        height: 90vw;
+    }
+
+    #categories-container9{
+        height: calc(100%-65px);
+        flex-direction: column;
+        height: 12vw;
+        padding: 150vw 40vw;
+        margin-left: -10vw;
+    }
+    #categories-container9 #box1{
+        width: 80vw;
+        height: 90vw;
+        border-radius: 4vw;
+        padding: 3vw 3.6vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container9 #box2{
+        width: 80vw;
+        height: 90vw;
+        border-radius: 4vw;
+        padding: 3vw 3.6vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container9 #box3{
+        width: 80vw;
+        height: 90vw;
+        border-radius: 4vw;
+        padding: 3vw 3.6vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container9 #box1 img:hover{
+        width: 130vw;
+        height: 90vw;
+    }
+    #categories-container9 #box2 img:hover{
+        width: 130vw;
+        height: 90vw;
+    }
+    #categories-container9 #box3 img:hover{
+        width: 130vw;
+        height: 90vw;
+    }
+
+    #categories-container10{
+        height: calc(100%-65px);
+        flex-direction: column;
+        height: 12vw;
+        padding: 150vw 40vw;
+        margin-left: -10vw;
+        border-bottom: 1px solid white;
+    }
+    #categories-container10 #box1{
+        width: 80vw;
+        height: 90vw;
+        border-radius: 4vw;
+        padding: 3vw 3.6vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container10 #box2{
+        width: 80vw;
+        height: 90vw;
+        border-radius: 4vw;
+        padding: 3vw 3.6vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container10 #box3{
+        width: 80vw;
+        height: 90vw;
+        border-radius: 4vw;
+        padding: 3vw 3.6vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container10 #box1 img:hover{
+        width: 130vw;
+        height: 90vw;
+    }
+    #categories-container10 #box2 img:hover{
+        width: 130vw;
+        height: 90vw;
+    }
+    #categories-container10 #box3 img:hover{
+        width: 130vw;
+        height: 90vw;
+    }
+
+    #categories-container11{
+        height: calc(100%-65px);
+        flex-direction: column;
+        height: 12vw;
+        padding: 150vw 40vw;
+        margin-left: -10vw;
+        border-bottom: 1px solid white;
+    }
+    #categories-container11 #box1{
+        width: 80vw;
+        height: 90vw;
+        border-radius: 4vw;
+        padding: 3vw 3.6vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container11 #box2{
+        width: 80vw;
+        height: 90vw;
+        border-radius: 4vw;
+        padding: 3vw 3.6vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container11 #box3{
+        width: 80vw;
+        height: 90vw;
+        border-radius: 4vw;
+        padding: 3vw 3.6vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container11 #box1 img:hover{
+        width: 130vw;
+        height: 90vw;
+    }
+    #categories-container11 #box2 img:hover{
+        width: 130vw;
+        height: 90vw;
+    }
+    #categories-container11 #box3 img:hover{
+        width: 130vw;
+        height: 90vw;
+    }
+
+    #categories-container12{
+        height: calc(100%-65px);
+        flex-direction: column;
+        height: 12vw;
+        padding: 150vw 40vw;
+        margin-left: -10vw;
+        border-bottom: 1px solid white;
+    }
+    #categories-container12 #box1{
+        width: 80vw;
+        height: 90vw;
+        border-radius: 4vw;
+        padding: 3vw 3.6vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container12 #box2{
+        width: 80vw;
+        height: 90vw;
+        border-radius: 4vw;
+        padding: 3vw 3.6vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container12 #box3{
+        width: 80vw;
+        height: 90vw;
+        border-radius: 4vw;
+        padding: 3vw 3.6vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container12 #box1 img:hover{
+        width: 130vw;
+        height: 90vw;
+    }
+    #categories-container12 #box2 img:hover{
+        width: 130vw;
+        height: 90vw;
+    }
+    #categories-container12 #box3 img:hover{
+        width: 130vw;
+        height: 90vw;
+    }
+
+ 
+    #categories-container13{
+        height: calc(100%-65px);
+        flex-direction: column;
+        height: 12vw;
+        padding: 150vw 40vw;
+        margin-left: -10vw;
+        border-bottom: 1px solid white;
+    }
+    #categories-container13 #box1{
+        width: 80vw;
+        height: 90vw;
+        border-radius: 4vw;
+        padding: 3vw 3.6vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container13 #box2{
+        width: 80vw;
+        height: 90vw;
+        border-radius: 4vw;
+        padding: 3vw 3.6vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container13 #box3{
+        width: 80vw;
+        height: 90vw;
+        border-radius: 4vw;
+        padding: 3vw 3.6vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container13 #box1 img:hover{
+        width: 130vw;
+        height: 90vw;
+    }
+    #categories-container13 #box2 img:hover{
+        width: 130vw;
+        height: 90vw;
+    }
+    #categories-container13 #box3 img:hover{
+        width: 130vw;
+        height: 90vw;
+    }
+
+    #categories-container14{
+        height: calc(100%-65px);
+        flex-direction: column;
+        height: 12vw;
+        padding: 150vw 40vw;
+        margin-left:-10vw;
+        border-bottom: 1px solid white;
+    }
+    #categories-container14 #box1{
+        width: 80vw;
+        height: 90vw;
+        border-radius: 4vw;
+        padding: 3vw 3.6vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container14 #box2{
+        width: 80vw;
+        height: 90vw;
+        border-radius: 4vw;
+        padding: 3vw 3.6vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container14 #box3{
+        width: 80vw;
+        height: 90vw;
+        border-radius: 4vw;
+        padding: 3vw 3.6vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container14 #box1 img:hover{
+        width: 130vw;
+        height: 90vw;
+    }
+    #categories-container14 #box2 img:hover{
+        width: 130vw;
+        height: 90vw;
+    }
+    #categories-container14 #box3 img:hover{
+        width: 130vw;
+        height: 90vw;
+    }
+
+    #categories-container15{
+        height: calc(100%-65px);
+        flex-direction: column;
+        height: 12vw;
+        padding: 150vw 40vw;
+        margin-left:-10vw;
+        border-bottom: 1px solid white;
+    }
+    #categories-container15 #box1{
+        width: 80vw;
+        height: 90vw;
+        border-radius: 4vw;
+        padding: 3vw 3.6vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container15 #box2{
+        width: 80vw;
+        height: 90vw;
+        border-radius: 4vw;
+        padding: 3vw 3.6vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container15 #box3{
+        width: 80vw;
+        height: 90vw;
+        border-radius: 4vw;
+        padding: 3vw 3.6vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container15 #box1 img:hover{
+        width: 130vw;
+        height: 90vw;
+    }
+    #categories-container15 #box2 img:hover{
+        width: 130vw;
+        height: 90vw;
+    }
+    #categories-container15 #box3 img:hover{
+        width: 130vw;
+        height: 90vw;
+    }
+
+    #categories-container16{
+        height: calc(100%-65px);
+        flex-direction: column;
+        height: 12vw;
+        padding: 150vw 40vw;
+        margin-left:-10vw;
+        border-bottom: 1px solid white;
+    }
+    #categories-container16 #box1{
+        width: 80vw;
+        height: 90vw;
+        border-radius: 4vw;
+        padding: 3vw 3.6vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container16 #box2{
+        width: 80vw;
+        height: 90vw;
+        border-radius: 4vw;
+        padding: 3vw 3.6vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container16 #box3{
+        width: 80vw;
+        height: 90vw;
+        border-radius: 4vw;
+        padding: 3vw 3.6vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container16 #box1 img:hover{
+        width: 130vw;
+        height: 90vw;
+    }
+    #categories-container16 #box2 img:hover{
+        width: 130vw;
+        height: 90vw;
+    }
+    #categories-container16 #box3 img:hover{
+        width: 130vw;
+        height: 90vw;
+    }
+
+    #categories-container17{
+        height: calc(100%-65px);
+        flex-direction: column;
+        height: 12vw;
+        padding: 170vw 40vw;
+        margin-left:-10vw;
+        border-bottom: 1px solid white;
+    }
+    #categories-container17 #box1{
+        width: 80vw;
+        height: 90vw;
+        border-radius: 4vw;
+        padding: 3vw 3.6vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container17 #box2{
+        width: 80vw;
+        height: 90vw;
+        border-radius: 4vw;
+        padding: 3vw 3.6vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container17 #box3{
+        width: 80vw;
+        height: 90vw;
+        border-radius: 4vw;
+        padding: 3vw 3.6vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container17 #box1 img:hover{
+        width: 130vw;
+        height: 90vw;
+    }
+    #categories-container17 #box2 img:hover{
+        width: 130vw;
+        height: 90vw;
+    }
+    #categories-container17 #box3 img:hover{
+        width: 130vw;
+        height: 90vw;
+    }
+
+    #categories-container18{
+        height: calc(100%-65px);
+        flex-direction: column;
+        height: 12vw;
+        padding: 150vw 40vw;
+        margin-left:-10vw;
+        border-bottom: 1px solid white;
+    }
+    #categories-container18 #box1{
+        width: 80vw;
+        height: 90vw;
+        border-radius: 4vw;
+        padding: 3vw 3.6vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container18 #box2{
+        width: 80vw;
+        height: 90vw;
+        border-radius: 4vw;
+        padding: 3vw 3.6vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container18 #box3{
+        width: 80vw;
+        height: 90vw;
+        border-radius: 4vw;
+        padding: 3vw 3.6vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container18 #box1 img:hover{
+        width: 130vw;
+        height: 90vw;
+    }
+    #categories-container18 #box2 img:hover{
+        width: 130vw;
+        height: 90vw;
+    }
+    #categories-container18 #box3 img:hover{
+        width: 130vw;
+        height: 90vw;
+    }
+
+    #categories-container19{
+        height: calc(100%-65px);
+        flex-direction: column;
+        height: 12vw;
+        padding: 150vw 40vw;
+        margin-left:-10vw;
+        border-bottom: 1px solid white;
+    }
+    #categories-container19 #box1{
+        width: 80vw;
+        height: 90vw;
+        border-radius: 4vw;
+        padding: 3vw 3.6vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container19 #box2{
+        width: 80vw;
+        height: 90vw;
+        border-radius: 4vw;
+        padding: 3vw 3.6vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container19 #box3{
+        width: 80vw;
+        height: 90vw;
+        border-radius: 4vw;
+        padding: 3vw 3.6vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container19 #box1 img:hover{
+        width: 130vw;
+        height: 90vw;
+    }
+    #categories-container19 #box2 img:hover{
+        width: 130vw;
+        height: 90vw;
+    }
+    #categories-container19 #box3 img:hover{
+        width: 130vw;
+        height: 90vw;
+    }
+
+    #categories-container20{
+        height: calc(100%-65px);
+        flex-direction: column;
+        height: 12vw;
+        padding: 150vw 40vw;
+        margin-left:-10vw;
+        border-bottom: 1px solid white;
+    }
+    #categories-container20 #box1{
+        width: 80vw;
+        height: 90vw;
+        border-radius: 4vw;
+        padding: 3vw 3.6vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container20 #box2{
+        width: 80vw;
+        height: 90vw;
+        border-radius: 4vw;
+        padding: 3vw 3.6vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container20 #box3{
+        width: 80vw;
+        height: 90vw;
+        border-radius: 4vw;
+        padding: 3vw 3.6vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container20 #box1 img:hover{
+        width: 130vw;
+        height: 90vw;
+    }
+    #categories-container20 #box2 img:hover{
+        width: 130vw;
+        height: 90vw;
+    }
+    #categories-container20 #box3 img:hover{
+        width: 130vw;
+        height: 90vw;
+    }
+
+    #categories-container21{
+        height: calc(100%-65px);
+        flex-direction: column;
+        height: 12vw;
+        padding: 150vw 40vw;
+        margin-left:-10vw;
+        border-bottom: 1px solid white;
+    }
+    #categories-container21 #box1{
+        width: 80vw;
+        height: 90vw;
+        border-radius: 4vw;
+        padding: 3vw 3.6vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container21 #box2{
+        width: 80vw;
+        height: 90vw;
+        border-radius: 4vw;
+        padding: 3vw 3.6vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container21 #box3{
+        width: 80vw;
+        height: 90vw;
+        border-radius: 4vw;
+        padding: 3vw 3.6vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container21 #box1 img:hover{
+        width: 130vw;
+        height: 90vw;
+    }
+    #categories-container21 #box2 img:hover{
+        width: 130vw;
+        height: 90vw;
+    }
+    #categories-container21 #box3 img:hover{
+        width: 130vw;
+        height: 90vw;
+    }
+
+    #categories-container22{
+        height: calc(100%-65px);
+        flex-direction: column;
+        height: 160vw;
+        padding: 80vw 40vw;
+        margin-left:-10vw;
+    }
+    #categories-container22 #box1{
+        width: 80vw;
+        height: 90vw;
+        border-radius: 4vw;
+        padding: 3vw 3.6vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container22 #box2{
+        width: 80vw;
+        height: 90vw;
+        border-radius: 4vw;
+        padding: 3vw 3.6vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container22 #box3{
+        width: 80vw;
+        height: 90vw;
+        border-radius: 4vw;
+        padding: 3vw 3.6vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container22 #box1 img:hover{
+        width: 130vw;
+        height: 90vw;
+    }
+    #categories-container22 #box2 img:hover{
+        width: 130vw;
+        height: 90vw;
+    }
+    #categories-container22 #box3 img:hover{
+        width: 130vw;
+        height: 90vw;
+    }
+    
+
+
+    #contactus-nav{
+        width: 136vw;
+        height: 65px;
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    #contactus-nav-part1 h1{
+        margin-left: 3vw;
+        color: white;
+        font-size: 2.8vw;
+    }
+    #contactus-nav-part2 a{
+        text-decoration: none;
+        margin-right: 4vw;
+        font-size: 1.6vw;
+        color: black;
+        font-weight: 700;
+        border: 1px solid #000;
+        border-bottom-left-radius: 2.5vw;
+        border-top-right-radius: 2.5vw;
+        padding: 0.8vw 1vw;
+        background-color: rgb(175, 128, 10);
+        transition: 0.2s linear all;
+    }
+    #contactus-nav-part2 a:hover{
+        background-color: white;
+        color: black;
+    }
+    
+    #contactus-nav-part3 a{
+        text-decoration: none;
+        margin-right: 1vw;
+        font-size: 1.6vw;
+        color: black;
+        font-weight: 700;
+        border: 1px solid #000;
+        border-bottom-left-radius: 2.5vw;
+        border-top-right-radius: 2.5vw;
+        padding: 0.8vw 1vw;
+        background-color: rgb(175, 128, 10);
+        transition: 0.2s linear all;
+    }
+    #contactus-nav-part3 a:hover{
+        background-color: white;
+        color: black;
+    }
+    #contactus-nav i{
+        font-size: 1.6vw;
+        color: white;
+        margin-right: 2vw;
+        font-weight: 500;
+        display: none;
+    }
+    #contactus-footer{
+        width: 136vw;
+        height: 15vw;
+        background-color: black;
+        color: white;
+        margin-top: 200vw;
+        padding-bottom: 2vw;
+    }
+    #contactus-footer h4:nth-child(2){
+        font-size: 1vw;
+        margin-left: 64vw;
+        margin-top: 3.8vw;
+    }
+    #contactus-footer h4:nth-child(3){
+        font-size: 0.8vw;
+        margin-left: 65vw;
+    }
+
+
+    
+
+
+
+    #contactus-container{
+        width: 106vw;
+        height: 50vw;
+        border: 0.2vw solid #000;
+        border-top-left-radius: 6vw;
+        margin-bottom: 160vw;
+        border-bottom-right-radius: 10vw;
+    }
+    #contactus-left-part label{
+        font-size: 3vw;
+        margin-left: 8vw;
+    }
+    #contactus-left-part input[type="text"]{
+        width: 40vw;
+        height: 3vw;
+        margin-left: 30vw;
+        margin-bottom: 1vw;
+        margin-top: -0vw;
+    }
+    #contactus-left-part input[type="tel"]{
+        width: 40vw;
+        height: 3vw;
+        margin-left: 30vw;
+    }
+    #contactus-left-part input[type="email"]{
+        width: 40vw;
+        height: 3vw;
+        margin-left: 30vw;
+    }
+    .submit{
+        width: 7vw;
+        height: 3vw;
+        margin-left: 30vw;
+        font-size: 1.4vw;
+        margin-top: 3vw;
+        border-radius: 0.5vw;
+        border: 0.2px solid #000;
+    }
+    .submit:hover{
+        background-color: black;
+        color: white;
+    }
+    .reset{
+        width: 7vw;
+        height: 3vw;
+        margin-left: 25.6vw;
+        font-size: 1.4vw;
+        border-radius: 0.5vw;
+        border: 0.2px solid #000;
+    }
+    .reset:hover{
+        background-color: black;
+        color: white;
+    }
+    #contactus-right-part{
+        padding-left: 8vw;
+        padding-top: 16vw;
+    }
+    #contactus-right-part video{
+        width: 30vw;
+        height: 30vw;
+    }
+}
+
+
+
+
+
+
+
